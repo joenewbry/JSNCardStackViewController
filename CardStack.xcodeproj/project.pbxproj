@@ -14,6 +14,15 @@
 		D8E144351B407DA4005D79A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E144341B407DA4005D79A1 /* Images.xcassets */; };
 		D8E144381B407DA4005D79A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E144361B407DA4005D79A1 /* LaunchScreen.xib */; };
 		D8E144441B407DA4005D79A1 /* CardStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E144431B407DA4005D79A1 /* CardStackTests.m */; };
+		D8E1444D1B407FDD005D79A1 /* JSNCardStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1444C1B407FDD005D79A1 /* JSNCardStackViewController.m */; };
+		D8E144501B408531005D79A1 /* JSNCardStackCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1444F1B408531005D79A1 /* JSNCardStackCollectionViewDelegate.m */; };
+		D8E144591B408A19005D79A1 /* JSNCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E144581B408A19005D79A1 /* JSNCard.m */; };
+		D8E1445C1B408E6C005D79A1 /* DemoCardStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1445B1B408E6C005D79A1 /* DemoCardStackViewController.m */; };
+		D8E1445F1B408EC9005D79A1 /* DemoModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1445E1B408EC9005D79A1 /* DemoModelData.m */; };
+		D8E144621B409864005D79A1 /* JSNCardCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E144611B409864005D79A1 /* JSNCardCollectionView.m */; };
+		D8E144651B4098D5005D79A1 /* JSNCardCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E144641B4098D5005D79A1 /* JSNCardCollectionViewFlowLayout.m */; };
+		D8E144681B4098F0005D79A1 /* JSNCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E144671B4098F0005D79A1 /* JSNCardCollectionViewCell.m */; };
+		D8E1446A1B409D6C005D79A1 /* JSNCardStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E144691B409D6C005D79A1 /* JSNCardStackViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,6 @@
 		6003F59B195388D20070C39A /* CardStack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardStack-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* JSNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSNAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* JSNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSNAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* JSNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSNViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* JSNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSNViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -66,6 +73,25 @@
 		D8E1443D1B407DA4005D79A1 /* CardStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E144421B407DA4005D79A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8E144431B407DA4005D79A1 /* CardStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardStackTests.m; sourceTree = "<group>"; };
+		D8E1444B1B407FDD005D79A1 /* JSNCardStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNCardStackViewController.h; sourceTree = "<group>"; };
+		D8E1444C1B407FDD005D79A1 /* JSNCardStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNCardStackViewController.m; sourceTree = "<group>"; };
+		D8E1444E1B408531005D79A1 /* JSNCardStackCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNCardStackCollectionViewDelegate.h; sourceTree = "<group>"; };
+		D8E1444F1B408531005D79A1 /* JSNCardStackCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNCardStackCollectionViewDelegate.m; sourceTree = "<group>"; };
+		D8E144511B40855A005D79A1 /* JSNCardStackCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNCardStackCollectionViewDataSource.h; sourceTree = "<group>"; };
+		D8E144541B40873E005D79A1 /* JSNCardData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNCardData.h; sourceTree = "<group>"; };
+		D8E144571B408A19005D79A1 /* JSNCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNCard.h; sourceTree = "<group>"; };
+		D8E144581B408A19005D79A1 /* JSNCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNCard.m; sourceTree = "<group>"; };
+		D8E1445A1B408E6C005D79A1 /* DemoCardStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCardStackViewController.h; sourceTree = "<group>"; };
+		D8E1445B1B408E6C005D79A1 /* DemoCardStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCardStackViewController.m; sourceTree = "<group>"; };
+		D8E1445D1B408EC9005D79A1 /* DemoModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModelData.h; sourceTree = "<group>"; };
+		D8E1445E1B408EC9005D79A1 /* DemoModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModelData.m; sourceTree = "<group>"; };
+		D8E144601B409864005D79A1 /* JSNCardCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNCardCollectionView.h; sourceTree = "<group>"; };
+		D8E144611B409864005D79A1 /* JSNCardCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNCardCollectionView.m; sourceTree = "<group>"; };
+		D8E144631B4098D5005D79A1 /* JSNCardCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNCardCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		D8E144641B4098D5005D79A1 /* JSNCardCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNCardCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		D8E144661B4098F0005D79A1 /* JSNCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNCardCollectionViewCell.h; sourceTree = "<group>"; };
+		D8E144671B4098F0005D79A1 /* JSNCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNCardCollectionViewCell.m; sourceTree = "<group>"; };
+		D8E144691B409D6C005D79A1 /* JSNCardStackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSNCardStackViewController.xib; sourceTree = "<group>"; };
 		E30FCC33D551902A73E646E8 /* Pods-CardStack_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardStack_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardStack_Example/Pods-CardStack_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,9 +165,11 @@
 			children = (
 				6003F59C195388D20070C39A /* JSNAppDelegate.h */,
 				6003F59D195388D20070C39A /* JSNAppDelegate.m */,
+				D8E1445A1B408E6C005D79A1 /* DemoCardStackViewController.h */,
+				D8E1445B1B408E6C005D79A1 /* DemoCardStackViewController.m */,
+				D8E1445D1B408EC9005D79A1 /* DemoModelData.h */,
+				D8E1445E1B408EC9005D79A1 /* DemoModelData.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* JSNViewController.h */,
-				6003F5A6195388D20070C39A /* JSNViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -192,6 +220,21 @@
 		D8E144261B407DA4005D79A1 /* CardStack */ = {
 			isa = PBXGroup;
 			children = (
+				D8E144541B40873E005D79A1 /* JSNCardData.h */,
+				D8E144571B408A19005D79A1 /* JSNCard.h */,
+				D8E144581B408A19005D79A1 /* JSNCard.m */,
+				D8E1444B1B407FDD005D79A1 /* JSNCardStackViewController.h */,
+				D8E144601B409864005D79A1 /* JSNCardCollectionView.h */,
+				D8E144611B409864005D79A1 /* JSNCardCollectionView.m */,
+				D8E144631B4098D5005D79A1 /* JSNCardCollectionViewFlowLayout.h */,
+				D8E144641B4098D5005D79A1 /* JSNCardCollectionViewFlowLayout.m */,
+				D8E144661B4098F0005D79A1 /* JSNCardCollectionViewCell.h */,
+				D8E144671B4098F0005D79A1 /* JSNCardCollectionViewCell.m */,
+				D8E1444C1B407FDD005D79A1 /* JSNCardStackViewController.m */,
+				D8E144691B409D6C005D79A1 /* JSNCardStackViewController.xib */,
+				D8E1444E1B408531005D79A1 /* JSNCardStackCollectionViewDelegate.h */,
+				D8E1444F1B408531005D79A1 /* JSNCardStackCollectionViewDelegate.m */,
+				D8E144511B40855A005D79A1 /* JSNCardStackCollectionViewDataSource.h */,
 				D8E1442B1B407DA4005D79A1 /* AppDelegate.h */,
 				D8E1442C1B407DA4005D79A1 /* AppDelegate.m */,
 				D8E1442E1B407DA4005D79A1 /* ViewController.h */,
@@ -311,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E1446A1B409D6C005D79A1 /* JSNCardStackViewController.xib in Resources */,
 				D8E144331B407DA4005D79A1 /* Main.storyboard in Resources */,
 				D8E144381B407DA4005D79A1 /* LaunchScreen.xib in Resources */,
 				D8E144351B407DA4005D79A1 /* Images.xcassets in Resources */,
@@ -332,7 +376,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E144301B407DA4005D79A1 /* ViewController.m in Sources */,
+				D8E1445F1B408EC9005D79A1 /* DemoModelData.m in Sources */,
+				D8E144681B4098F0005D79A1 /* JSNCardCollectionViewCell.m in Sources */,
+				D8E144591B408A19005D79A1 /* JSNCard.m in Sources */,
+				D8E144501B408531005D79A1 /* JSNCardStackCollectionViewDelegate.m in Sources */,
+				D8E1445C1B408E6C005D79A1 /* DemoCardStackViewController.m in Sources */,
+				D8E1444D1B407FDD005D79A1 /* JSNCardStackViewController.m in Sources */,
+				D8E144651B4098D5005D79A1 /* JSNCardCollectionViewFlowLayout.m in Sources */,
 				D8E1442D1B407DA4005D79A1 /* AppDelegate.m in Sources */,
+				D8E144621B409864005D79A1 /* JSNCardCollectionView.m in Sources */,
 				D8E1442A1B407DA4005D79A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
