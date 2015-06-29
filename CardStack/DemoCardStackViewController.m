@@ -9,7 +9,7 @@
 #import "DemoCardStackViewController.h"
 #import "DemoModelData.h"
 
-@interface DemoCardStackViewController () <JSNCardStackCollectionViewDataSource, JSNCardStackCollectionViewDelegate>
+@interface DemoCardStackViewController () <JSNCardStackCollectionViewDataSource>
 
 @property (strong, nonatomic) DemoModelData *demoData;
 
@@ -23,8 +23,11 @@
 
     self.demoData = [[DemoModelData alloc] init];
 
-    self.collectionView.dataSource = self;
-    self.collectionView.delegate = self;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 }
 
 #pragma mark - JSNCardStackCollectionViewDataSource
@@ -34,11 +37,18 @@
 }
 
 #pragma mark - Collection View Data Source
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.demoData.cards.count;
+}
 
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    JSNCardCollectionViewCell *cell = (JSNCardCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
 
-#pragma mark -- JSNCardStackCollectionViewDelegate
+    cell.backgroundColor = [UIColor redColor];
 
-
-
+    return cell;
+}
 
 @end

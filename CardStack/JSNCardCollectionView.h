@@ -11,13 +11,13 @@
 
 #import "JSNCardStackCollectionViewDelegate.h"
 #import "JSNCardStackCollectionViewDataSource.h"
-#import "JSNCardCollectionViewFlowLayout.h"
+#import "JSNCardCollectionViewLayout.h"
 #import "JSNCardCollectionViewCell.h"
 
 @interface JSNCardCollectionView : UICollectionView
 
 @property (weak, nonatomic) id<JSNCardStackCollectionViewDataSource> dataSource;
-@property (weak, nonatomic) id<JSNCardStackCollectionViewDelegate> delegate;
-@property (weak, nonatomic) JSNCardCollectionViewFlowLayout *collectionViewLayout;
+@property (weak, nonatomic) JSNCardCollectionViewLayout *collectionViewLayout;
+
 
 @end

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JSNCardCollectionViewFlowLayout : UICollectionViewFlowLayout
+@class JSNCardCollectionView;
+
+@interface JSNCardCollectionViewLayout : UICollectionViewLayout
+
+- (void)userDidPan:(UIPanGestureRecognizer *)pan;
 
 @end

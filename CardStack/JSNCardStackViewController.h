@@ -11,7 +11,7 @@
 #import "JSNCardStackCollectionViewDelegate.h"
 #import "JSNCardCollectionView.h"
 
-@interface JSNCardStackViewController : UIViewController <JSNCardStackCollectionViewDataSource, JSNCardStackCollectionViewDelegate>
+@interface JSNCardStackViewController : UIViewController <JSNCardStackCollectionViewDataSource>
 
 @property (weak, nonatomic, readonly) JSNCardCollectionView *collectionView;
 

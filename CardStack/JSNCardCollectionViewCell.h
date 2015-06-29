@@ -10,4 +10,8 @@
 
 @interface JSNCardCollectionViewCell : UICollectionViewCell
 
++ (UINib *)nib;
++ (NSString *)cellReuseIdentifier;
+- (void)configureWithTitle:(NSString *)title;
+
 @end

@@ -26,6 +26,35 @@
     return [[[self class] alloc] initWithNibName:NSStringFromClass([JSNCardStackViewController class]) bundle:[NSBundle bundleForClass:[JSNCardStackViewController class]]];
 }
 
+- (void)jsn_configureCardViewController
+{
+    self.collectionView.dataSource = self;
+
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.collectionView.collectionViewLayout action:@selector(userDidPan:)];
+    [self.collectionView addGestureRecognizer:pan];
+}
+
+#pragma mark - View lifecyle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    [[[self class] nib] instantiateWithOwner:self options:nil];
+
+    [self jsn_configureCardViewController];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.collectionView.collectionViewLayout invalidateLayout];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
 
 
 #pragma mark - JSNCards collection view data source
@@ -50,7 +79,7 @@
 {
     id<JSNCardData> cardItem = [collectionView.dataSource collectionView:collectionView cardDataForItemAtIndexPath:indexPath];
 
-    JSNCardCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CardCell" forIndexPath:indexPath];
+    JSNCardCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[JSNCardCollectionViewCell cellReuseIdentifier] forIndexPath:indexPath];
     cell.backgroundColor = [UIColor blueColor];
     return cell;
 }

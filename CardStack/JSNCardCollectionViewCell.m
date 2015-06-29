@@ -8,6 +8,28 @@
 
 #import "JSNCardCollectionViewCell.h"
 
+@interface JSNCardCollectionViewCell ()
+
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@end
+
 @implementation JSNCardCollectionViewCell
+
++ (UINib *)nib
+{
+    return [UINib nibWithNibName:NSStringFromClass([JSNCardCollectionViewCell class]) bundle:[NSBundle bundleForClass:[JSNCardCollectionViewCell class]]];
+}
+
++ (NSString *)cellReuseIdentifier
+{
+    return NSStringFromClass([JSNCardCollectionViewCell class]);
+}
+
+- (void)configureWithTitle:(NSString *)title
+{
+    self.titleLabel.text = title;
+}
 
 @end

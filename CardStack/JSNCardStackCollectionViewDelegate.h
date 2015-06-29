@@ -7,11 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@protocol JSNCardStackCollectionViewDelegate <NSObject>
-
-@end
-
-@interface JSNCardStackCollectionViewDelegate : NSObject
+@interface JSNCardStackCollectionViewDelegate : UICollectionViewLayout
 
 @end
